@@ -61,8 +61,4 @@ module "hosted_zone" {
   aws_lb_zone_id  = module.alb.aws_lb_zone_id
 }
 
-module "aws_ceritification_manager" {
-  source         = "./certificate-manager"
-  domain_name    = "jenkins.oyester.icu"
-  hosted_zone_id = module.hosted_zone.hosted_zone_id
-}
+
